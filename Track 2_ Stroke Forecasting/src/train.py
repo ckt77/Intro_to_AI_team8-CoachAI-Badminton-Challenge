@@ -30,7 +30,7 @@ def get_argument():
                         help="given encode length")
     opt.add_argument("--batch_size",
                         type=int,
-                        default=32,
+                        default=16,
                         help="batch size")
     opt.add_argument("--lr",
                         type=int,
@@ -78,7 +78,7 @@ def get_argument():
                         help="Number of samples for evaluation")
     opt.add_argument("--gpu_num",
                         type=int,
-                        default=4,
+                        default=0,
                         help="Selected GPU number")
     config = vars(opt.parse_args())
     return config
